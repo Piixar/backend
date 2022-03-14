@@ -4,7 +4,7 @@ exports.likeUser = (req, res, next) => {
     if (req.body.like === 1) {
         Thing.updateOne({ _id: req.params.id },
             { 
-                $inc: { likes: req.body.like++ },             // $inc permet d'incrémenter 
+                $inc: { likes: 1 },                           // $inc permet d'incrémenter 
                 $push: { usersLiked: req.body.userId }        // $push permet d'ajouter l'id de l'utilisateur dans le tableau usersLiked
             }
         )
@@ -13,7 +13,7 @@ exports.likeUser = (req, res, next) => {
     } else if (req.body.like === -1) {
         Thing.updateOne({ _id: req.params.id },
             { 
-                $inc: { dislikes: (req.body.like++) * -1 },
+                $inc: { dislikes: 1},
                 $push: { usersDisliked: req.body.userId } 
             }
         )
@@ -26,7 +26,7 @@ exports.likeUser = (req, res, next) => {
                     Thing.updateOne({ _id: req.params.id },
                         {
                             $inc: { likes: -1 } ,
-                            $pull: { usersLiked: req.body.userId } // $pull permet de supprimer l'id de l'utilisateur dans le tableau usersliked
+                            $pull: { usersLiked: req.body.userId }                    // $pull permet de supprimer l'id de l'utilisateur dans le tableau usersliked
                         }
                     )
                     .then(() => { res.status(200).json({ message: 'Like supprimé !' }) })
