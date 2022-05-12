@@ -7,19 +7,21 @@
 npm install
 ```
 
-### Configuration connexion base de donnée et Mise en place variables environnement
+### Configuration connexion base de donnée mongoDB et Mise en place variables environnement
 ```
-Créer un fichier .env
+Créer un fichier .env dans votre dossier racine du projet
+
+1- Ajouter la ligne DB_HOST=           
+2- Ajouter la ligne DB_USER= 
+3- Ajouter la ligne DB_PASSWORD=
+
+Mettez vos paramètres de connexion à votre base de donnée mongoDB
 ```
 
-### Création de la base de donnée
+### Dossier images
 ```
-En ligne de commande faire : 
+Créer un dossier images dans votre dossier racine du projet
 
-1- npx sequelize-cli db:create
-2- npx sequelize-cli db:migrate
 ```
 
-### Mise en place variables environnement
-```
 
