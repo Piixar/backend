@@ -14,8 +14,9 @@ Créer un fichier .env dans votre dossier racine du projet
 1- Ajouter la ligne DB_HOST=           
 2- Ajouter la ligne DB_USER= 
 3- Ajouter la ligne DB_PASSWORD=
+4- Ajouter la ligne TOKEN_SIGN= 
 
-Mettez vos paramètres de connexion à votre base de donnée mongoDB 
+Mettez vos paramètres de connexion à votre base de donnée mongoDB et mettez un code pour la signature du token.
 ```
 
 ### Dossier images
