@@ -24,4 +24,10 @@ Mettez vos paramètres de connexion à votre base de donnée mongoDB et mettez u
 Créer un dossier images dans votre dossier racine du projet
 ```
 
+### Execution du code
+```
+En ligne de commande faire : 
+
+nodemon server OU npm run server
+```
 
