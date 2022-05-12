@@ -1,6 +1,6 @@
-# Projet7
+# Projet6
 
-# reseau-social-app backend
+# Sauce Piquante
 
 ### Project setup
 ```
