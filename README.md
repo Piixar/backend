@@ -22,7 +22,6 @@ Mettez vos paramètres de connexion à votre base de donnée mongoDB  et mettez 
 ### Dossier images
 ```
 Créer un dossier images dans votre dossier racine du projet
-
 ```
 
 
